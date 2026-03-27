@@ -1,0 +1,321 @@
+body {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+#home {
+  background-color: rgb(170, 209, 237);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: rgb(4, 54, 68);
+}
+
+.profile_name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.contact_info img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.topdiv {
+  display: flex;
+  gap: 20px;
+  padding-top: 2px;
+}
+
+.topmenu {
+  color: rgb(4, 54, 68);
+  text-decoration: none;
+  font-size: 20px;
+  justify-content: end;
+}
+
+.topmenu:hover {
+  color: rgb(17, 108, 134);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* Titles */
+h2 {
+  text-align: justify;
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  color: rgb(17, 108, 134);
+  margin: 30px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+/* About Me */
+.container {
+  display: flex;
+}
+
+#about-me {
+  display: flex;
+  align-items: center;
+}
+
+#about-me h1 {
+  font-size: 60px;
+  margin-top: 90px;
+  color: rgb(4, 54, 68);
+}
+
+#about-me p {
+  font-size: 25px;
+  color: rgb(4, 54, 68);
+  margin-top: -1cm;
+}
+
+.profile_image {
+  width: 550px;
+  height: fit-content;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+/* Skills */
+#skills {
+  display: flex;
+}
+
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 1.25in;
+}
+
+.skill {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 6px;
+  text-align: center;
+  padding: 20px;
+  width: 2in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+}
+
+.skill img {
+  height: 35px;
+}
+
+.skill h6 {
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+}
+
+.skill p {
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+}
+
+.projects-container {
+  margin-top: 100px;
+  margin-left: -100px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+}
+
+.project-card {
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.project-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/* Recommendations */
+.all_recommendations {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 0 200px;
+  align-content: center;
+  flex-flow: wrap;
+}
+
+.recommendation {
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 20px;
+  box-shadow: 0 3px 10px;
+  margin: 10px;
+  height: 150px;
+  width: 21.875rem;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+/* Scroll Home Button */
+.iconbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(17, 108, 134);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.iconbutton img {
+  width: 24px; /* Adjust based on your icon size */
+  height: 24px;
+  /* If your icon is black/white, you might need 'filter' to make it white */
+  filter: brightness(0) invert(1);
+}
+
+/* Recommendation Form */
+
+input,
+textarea {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  margin: 10px;
+  width: 100%;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: thin solid white;
+  width: 50%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid rgb(17, 108, 134);
+  color: rgb(17, 108, 134);
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: rgb(17, 108, 134);
+  border: 1px solid rgb(17, 108, 134);
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Form Pop-Up */
+.popup {
+  width: 400px;
+  background-color: rgb(153, 215, 233);
+  border-radius: 3mm;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  /* padding: 30px; */
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid rgb(17, 108, 134);
+  color: rgb(17, 108, 134);
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid rgb(17, 108, 134);
+  color: rgb(17, 108, 134);
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}

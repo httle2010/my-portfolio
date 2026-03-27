@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Hazel Le
+          <div class="contact_info">
+            <img
+              src="/images/envelope.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            httle2010@gmail.com
+          </div>
+          <div class="contact_info">
+            <img
+              src="images/phone.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            682-XXX-XXXX
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img
+          src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif"
+          class="profile_image"
+        />
+      </div>
+
+      <div>
+        <h1>Hi, I'm Hazel Le! <img src="/images/waving-hand.png" width="60px" /></h1>
+        <p>
+          I am a recent Computer Science graduate from The University of Texas
+          at Arlington with experience building multiple end-to-end
+          applications, both independently and in collaborative team
+          environments. I am currently seeking new opportunities and challenges
+          that allow me to contribute to large-scale applications and solve
+          complex, real-world problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="images/html5.png" />
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="images/js.jpeg" />
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="images/java.png" />
+          <h6>Java</h6>
+          <p>.5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="/images/react.png" />
+          <h6>React</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="/images/node.png" />
+          <h6>Node Js</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="/images/CSS3.png" />
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="images/c.png" />
+          <h6>C</h6>
+          <p>1 years experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Database Web App - Full Stack Developer</h3>
+          <ul>
+            <li>Designed and created a MySQL database using Workbench.</li>
+            <li>
+              Built a website that performs basic database operations such as
+              add, edit, and delete records.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>
+            FinAI – Personal Financial Advisor with Chatbot - Front End
+            Developer
+          </h3>
+          <ul>
+            <li>
+              Developed a smart web application that assists with budgeting,
+              saving goals, and financial advice.
+            </li>
+            <li>
+              Implemented a chatbot that provides personalized suggestions based
+              on user input.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Hospital Whiteboard GUI - Front End Developer</h3>
+          <ul>
+            <li>
+              Developed a digital scheduling system to replace manual
+              whiteboards, enabling synchronous coordination between nurses and
+              patients.
+            </li>
+            <li>
+              Built a HIPAA-compliant backend with secure authentication and
+              data protection.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Hazel is a very quick learner and quickly grasps key concepts of Web
+          development. She got a great attitude & she is an excellent team
+          player. She has a curious mind and asks the right question. She takes
+          initiative within a team and has potentials to lead the team.
+          <span>&#8221;</span>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex-center">
+        <fieldset>
+          <legend class="introduction">Leave a Recomendation</legend>
+          <input type="text" placeholder="Name (Optional)" />
+          <br />
+          <textarea
+            id="new_recommendation"
+            cols="500"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="flex-center">
+            <button id="recommend_btn" onclick="addRecommendation()">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="images/home.png" />
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="images/checkmark--outline.svg" />
+      <h3>Thanks for leaving a recommendations</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
